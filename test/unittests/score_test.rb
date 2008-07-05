@@ -1,5 +1,4 @@
-require "test/unit"
-require File.dirname(__FILE__) + "/../bin/score"
+require File.expand_path(File.dirname(__FILE__) + "/../test_helper")
 
 class PlayerTest < Test::Unit::TestCase
   def setup

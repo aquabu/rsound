@@ -1,10 +1,9 @@
-require "test/unit"
-require File.dirname(__FILE__) + "/../bin/player"
+require File.expand_path(File.dirname(__FILE__) + "/../test_helper")
 
 class PlayerTest < Test::Unit::TestCase
   def setup
     @player = Player.new
-    @player.score_path = File.dirname(__FILE__) + "/fixtures/"
+    @player.score_path = File.expand_path(File.dirname(__FILE__) + "/fixtures") + "/"
   end
   
   def test_player_can_be_instantiated
@@ -18,7 +17,6 @@ class PlayerTest < Test::Unit::TestCase
   
   # TODO: running these two tests in sequence causes csound to only run one of the requests
   def test_play_guiro2_csd
-    puts "playing guiro2.csd"
     assert @player.play_score("guiro2.csd")
   end
 end

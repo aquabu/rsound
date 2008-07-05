@@ -7,7 +7,7 @@ class Score
     @kr = 4410
     @ksmps = 10
     @nchnls = 1
-    @options = "-odac -iadc"
+    @options = "-d -odac -iadc"
     @path = File.dirname(__FILE__) + "/../scores/"
     @score_name = "unnamed_score"
   end
