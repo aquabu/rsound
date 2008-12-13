@@ -1,2 +1,2 @@
 == RSOUND
-Rsound is a ruby rapper around csound. It is currently very alpha.
+Rsound is a ruby wrapper around csound. It is currently very alpha.
